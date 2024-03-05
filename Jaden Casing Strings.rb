@@ -13,4 +13,28 @@ Jaden-Cased:     "How Can Mirrors Be Real If Our Eyes Aren't Real"
 
 =end
 
-#Actually, I'm keeping it. 
+puts "Hello, I'm going to Jaden-ify your tweet!"
+puts "Could you give me your tweet, please?"
+tweet = gets.chomp
+sleep(1)
+puts "You input: #{tweet}"
+puts "Thank you"
+sleep(1)
+
+puts "I will now Jaden-ify it, please hold."
+sleep(1)
+puts "Loading..."
+sleep(1)
+puts "Loading..."
+sleep(1)
+
+puts "Your Jaden-ified sentence is as follows:"
+
+split_tweet = tweet.split(" ")
+
+capitalized_tweet = split_tweet.map(&:capitalize)
+
+capitalized_tweet.each do |word|
+    print word.to_s + " "
+end 
+
